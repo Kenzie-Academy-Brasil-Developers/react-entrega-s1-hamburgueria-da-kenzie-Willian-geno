@@ -1,0 +1,30 @@
+li{
+    list-style-type: none;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color: rgb(69, 151, 206);
+
+    border-style: double;
+    border-radius: 10px;
+    border-color: #00356b;
+}
+.ulCarronho{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;  
+}
+
+.divListProducts{
+    display: flex;
+    width: 33vw;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+
+.productsCharacteristics{
+    display: flex;
+    flex-direction: column;
+    
+}
