@@ -1,16 +1,15 @@
-import './carrinho.css'
 function Carrinho (props) {
     
     return(
-        <div className = "divListProducts">
+        <div >
             <ul className = "ulCarronho">
                 {props.currentSale.map(item => (
-                    <li key = {item.id}>
-                       <div className = 'productsCharacteristics'>
-                            <div>{item.name}</div>
-                            <div>{item.category}</div>
-                            <div>R$ {item.price}</div>
+                    <li key = {item.id} className ="liCarrinho">
+                       <div >
+                            <h3 className = "h3Carrinho">{item.name}</h3>
+                            <h5 className = "h5Carrinho" >{item.category}</h5>
                         </div> 
+                            <h3 className = "h3Carrinho">R$ {item.price}</h3>
                     </li>
                 ))}
             </ul>

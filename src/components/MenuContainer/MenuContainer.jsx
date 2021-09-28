@@ -1,5 +1,4 @@
 import Product from "../Product/Product";
-import "./menuContainer.css";
 
 
 function MenuContainder (props) {

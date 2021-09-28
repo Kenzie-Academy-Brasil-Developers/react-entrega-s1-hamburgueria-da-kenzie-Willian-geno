@@ -1,63 +1,138 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h4, h3, h5, h2, p{
+  color:white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .divSearch{
-  display: flex;
+  width: 50vw;
+  height: 100%;
+
+  background-color:black;
+
+  box-shadow: 5px 0px 10px black;
+
+}
+
+.divCarrinho{
+  width: 50vw;
+  height: 100%;
+
+  box-shadow: 5px 0px 10px white;
 }
 
 input{
-  width: 25vw;
-  height: 5vh;
+  width: 58.5%;
+  height: 30px;
+  padding: 5px;  
+
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 2.5%;
+  
+  border: solid 2px white;
+  border-radius: 5px;
+  
+  font-size: 130%;
+  
+  box-shadow: 3px 3px 10px white;
+
+  background-color: black;
+  color: white;
 }
 
 button{
-  width:  15vw;
-  margin-left: 10px;
+  width: 18.5%;
+  height: 30px;
+  padding: 5px;  
 
-  background-color: #00356b;
+  margin-right: 2.5%;
+  margin-right: 5%;
 
+  border: solid 2px white;
   border-radius: 5px;
+  
+  font-size: 100%;
+  
+  box-shadow: 3px 3px 10px white;
 
   color: white;
-  font-size: 75%;
+  background-color: black;
+}
+li{
+  list-style-type: none;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 20px;
+
+  border: solid 3px white;
+  border-radius: 4px;
+
+  box-shadow: 3px 3px 10px white;
+
+  padding-left: 5px;
 }
 
-span{
-  justify-content:right;
+ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px; 
 }
 
+.divListProducts{
+  display: flex;
+  align-items: center;
+  justify-content:  space-between;
+
+  background-color: black;
+
+  width: 100%;
+  
+}
+
+.buttonProduct{
+  width: 35%;
+  height: 35%;
+}
+
+.h3Carrinho, .h5Carrinho, .h1Carrinho{
+  color: black;
+
+}
+
+.ulCarronho{
+  padding-left: 50px;
+
+}
+
+.liCarrinho{
+  display: flex;
+  align-items: center;
+  justify-content:  space-between;
+
+  background-color: white;
+
+  width: 100%;
+  
+  list-style-type: none;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 20px;
+
+  border: solid 3px black;
+  border-radius: 4px;
+
+  box-shadow: 3px 3px 10px black;
+
+  padding-left: 5px;
+}
+
+.h1Carrinho{
+  text-align: end;
+  margin-right: 20px;
+}
