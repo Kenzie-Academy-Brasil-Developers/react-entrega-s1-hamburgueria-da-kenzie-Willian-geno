@@ -31,14 +31,16 @@ function App() {
 
 
   const showProducts = (filteredProducts) => {
-    if (filteredProducts === ""){
-      setProducts(inventory);
-    }else{
-      setProducts(products.filter(item => 
+        setProducts(products.filter(item => 
         item.name.toLocaleLowerCase() === filteredProducts.toLocaleLowerCase()))  
-    }
+    
     }
 
+  const todosProdutos = () => {
+    setProducts(inventory)
+    
+  }; 
+    
   const handleClick = (productId) => {
     if (currentSale.some(item => item.id === productId)){
     }else{
@@ -52,7 +54,10 @@ function App() {
     <div className="App-header">  
         <div className = "divSearch">
           <input placeholder = "Oque você procura?" onChange = {(event) => setFilteredProducts(event.target.value)} />
-          <button onClick = {() => showProducts(filteredProducts)}>Pesquisar</button>
+          <div className = "divButton">
+            <button onClick = {() => showProducts(filteredProducts)}>Pesquisar</button>
+            <button onClick = {todosProdutos}>Voltar</button>
+          </div>
         <MenuContainder products ={products} function = {handleClick}/>
         </div>
         <div className = "divCarrinho">
